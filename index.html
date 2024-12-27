@@ -31,27 +31,148 @@
   </style>
 </head>
 
+
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
-
-  Learn more
-
+  <div class="overlay fixed hidden top-0 left-0 w-full h-full bg-almost_black bg-opacity-50 z-10">
+  </div>
+  <header
+    class="container w-full max-w-[1440px] mt-8 px-10 flex flex-nowrap items-center justify-start gap-16 mx-auto mb:justify-between mb:px-4">
+    <i class="block w-20 h-6 bg-almost_black"
+      style="mask: url(images/logo.svg) center / contain no-repeat; -webkit-mask:url(images/logo.svg) center / contain no-repeat; ">
+    </i>
+    <ul class="menu flex flex-nowrap gap-10 text-medium_gray text-[0.875rem] leading-4 items-center w-full mb:hidden
+      mb:fixed mb:h-full mb:w-3/4 mb:top-0 mb:right-0 mb:z-10 mb:flex-col mb:items-start">
+      <li class="cursor-pointer relative menu__item hover:text-almost_black mb:w-full"><a href="#" title="Features"
+          class="flex flex-nowrap items-center justify-between gap-2 mb:justify-start">Features <i
+            class="block w-2 h-1 bg-medium_gray mb:w-4 mb:h-2"
+            style="mask: url(images/icon-arrow-down.svg) center / contain no-repeat; -webkit-mask:url(images/icon-arrow-down.svg) center / contain no-repeat;"></i></a>
+        <ul
+          class="absolute hidden bg-almost_white shadow-lg shadow-almost_white p-6 top-full left-0 min-w-full h-fit flex-col gap-4 menu_child ">
+          <li class="cursor-pointer">
+            <a href="#" class="flex flex-nowrap items-center justify-start gap-4">
+              <i class="block w-[0.875rem] h-4 bg-[#726CEE]"
+                style="mask: url(images/icon-todo.svg) center / contain no-repeat; -webkit-mask:url(images/icon-todo.svg) center / contain no-repeat;"></i>
+              Todo List
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#" class="flex flex-nowrap items-center justify-start gap-4">
+              <i class="block w-[0.875rem] h-4 bg-[#4BB1DA]"
+                style="mask: url(images/icon-calendar.svg) center / contain no-repeat; -webkit-mask:url(images/icon-calendar.svg) center / contain no-repeat;"></i>
+              Calendar
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#" class="flex flex-nowrap items-center justify-start gap-4">
+              <i class="block w-[0.875rem] h-4 bg-[#EDD556]"
+                style="mask: url(images/icon-reminders.svg) center / contain no-repeat; -webkit-mask:url(images/icon-reminders.svg) center / contain no-repeat;"></i>
+              Reminders
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#" class="flex flex-nowrap items-center justify-start gap-4">
+              <i class="block w-[0.875rem] h-4 bg-[#8E4CB6]"
+                style="mask: url(images/icon-planning.svg) center / contain no-repeat; -webkit-mask:url(images/icon-planning.svg) center / contain no-repeat;"></i>
+              Planning
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="cursor-pointer menu__item relative hover:text-almost_black mb:w-full">
+        <a href="#" class="flex flex-nowrap items-center justify-between gap-2 mb:justify-start" title="Company">Company
+          <i class="block w-2 mb:w-4 mb:h-2 h-1 bg-medium_gray"
+            style="mask: url(images/icon-arrow-down.svg) center / contain no-repeat; -webkit-mask:url(images/icon-arrow-down.svg) center / contain no-repeat; "></i>
+        </a>
+        <ul
+          class="absolute hidden bg-almost_white shadow-lg shadow-almost_white p-6 top-full left-0 min-w-max h-fit flex-col gap-4 menu_child">
+          <li class="cursor-pointer">
+            <a href="#">
+              History
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#">
+              Our Team
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="cursor-pointer menu__item hover:text-almost_black mb:w-full"><a href="#" title="Careers">Careers</a>
+      </li>
+      <li class="cursor-pointer menu__item hover:text-almost_black mb:w-full"><a href="#" title="About">About</a></li>
+      <li
+        class="cursor-pointer ml-auto mb:ml-0 mb:self-center menu__item hover:text-almost_black mb:w-full mb:text-center">
+        <a href="#" title="Login">Login</a></li>
+      <li class="cursor-pointer menu__item mb:self-center hover:text-almost_black mb:w-full mb:text-center"><a href="#"
+          title="Register"
+          class="inline-block px-8 py-3 border-medium_gray hover:border-almost_black border-[1px] hover:border-[2px] border-solid">Register</a>
+      </li>
+    </ul>
+    <i class=" w-8 h-5 bg-almost_black mobile_menu relative z-20 hidden mb:block"
+      style="mask: url(images/icon-menu.svg) center / contain no-repeat; -webkit-mask: url(images/icon-menu.svg) center / contain no-repeat;"></i>
+  </header>
+  <main>
+    <section
+      class="container w-90% max-w-[1440px] px-10 flex flex-nowrap items-center justify-start mt-12 mx-auto gap-32 mb:w-full mb:max-w-full mb:flex-wrap mb:px-0">
+      <div class="mb:order-2">
+        <h1
+          class="font-bold text-[5rem] leading-[5rem] tracking-[-1.1px] text-almost_black mb:text-[2.25rem] mb:leading-[2.5rem] mb:tracking-[-0.5px] mb:text-center ">
+          Make remote work</h1>
+        <p
+          class="text-medium_gray font-medium text-[1.125rem] leading-6 my-24 mb:text-[1rem] mb:text-center mb:mt-4 mb:mb-6">
+          Get your
+          team in sync, no matter your
+          location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <a href="#"
+          class="block w-full max-w-max text-almost_black font-bold text-[1.125rem] leading-6 tracking-[-0.25px] px-8 py-4 rounded-md border-[1px] border-almost_black border-solid cursor-pointer mb:text-white mb:bg-almost_black mb:mx-auto">
+          Learn more</a>
+        <div class="flex flex-nowrap items-center justify-start mt-[6.75rem] mb:mt-10 mb:justify-center">
+          <i class="block w-28 h-5 bg-medium_gray"
+            style="mask: url(images/client-databiz.svg) center / contain no-repeat; -webkit-mask: url(images/client-databiz.svg) center / contain no-repeat;"></i>
+          <i class="block w-28 h-5 bg-medium_gray"
+            style="mask: url(images/client-audiophile.svg) center / contain no-repeat; -webkit-mask: url(images/client-audiophile.svg) center / contain no-repeat;"></i>
+          <i class="block w-28 h-5 bg-medium_gray"
+            style="mask: url(images/client-meet.svg) center / contain no-repeat; -webkit-mask: url(images/client-meet.svg) center / contain no-repeat;"></i>
+          <i class="block w-28 h-5 bg-medium_gray"
+            style="mask: url(images/client-maker.svg) center / contain no-repeat; -webkit-mask: url(images/client-maker.svg) center / contain no-repeat;"></i>
+        </div>
+      </div>
+      <picture>
+        <source srcset="images/image-hero-desktop.png" type="image/png" media="(min-width: 768px)">
+        <source srcset="images/image-hero-mobile.png" type="image/png" media="(max-width: 767px)">
+        <img src="/images/image-hero-desktop.png" alt="hero" class="w-full h-full object-cover">
+      </picture>
+    </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/TranDanh1122">Trần Thành Danh</a>.
   </div>
 </body>
+<script>
+  let menuToggle = document.querySelector('.mobile_menu')
+  let header = document.querySelector('header')
+  let overlay = document.querySelector('.overlay')
+  let menuItems = document.querySelectorAll('.menu__item')
+  menuToggle.addEventListener('click', (e) => {
+    header.toggleAttribute('open')
+    overlay.toggleAttribute('open')
+  })
+  menuItems.forEach(el => el.addEventListener('click', (e) => {
+    let el = e.target
+    if (!el.classList.contains('.menu__item')) el = el.parentNode
+    el.toggleAttribute('open')
+  }));
+  overlay.addEventListener('click', (e) => {
+    header.toggleAttribute('open', false)
+    overlay.toggleAttribute('open', false)
+  })
+</script>
 
 </html>
